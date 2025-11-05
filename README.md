@@ -74,6 +74,6 @@ Créer une expérience simple mais aboutie :
 **Hafid Idrissi**  
 DevOps & Full-Stack Engineer  
 GitHub : https://github.com/HafidIdrissi  
-LinkedIn : *(ajouter lien)*
+LinkedIn : https://www.linkedin.com/in/hafid-idrissi
 
 ---
