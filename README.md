@@ -1,79 +1,71 @@
-# Finger Chooser 🎉
+# Finger Chooser — Multi-Touch Random Picker App 🎉
 
-Application mobile permettant de **choisir une personne au hasard en posant plusieurs doigts sur l’écran**.  
-Idéal pour les jeux, les défis, les soirées, ou pour décider qui commence !
-
-👉 **Télécharger l’APK (Android)**  
-https://expo.dev/accounts/hafez_id/projects/finger-chooser/builds/68b5f23e-f773-4e88-9c2a-beef882d4417
+Finger Chooser is a lightweight mobile application that implements **real-time multi-touch detection** to randomly select a single participant among multiple users touching the screen simultaneously.  
+Built with **React Native + Expo**, the app focuses on performance, smooth animations, and a clean, customizable user interface.
 
 ---
 
-## 📱 Aperçu de l'application
+## 🧩 Core Features
 
-| Écran principal | Choix du style des bulles | Ajout des joueurs | Choix du fond |
-|---|---|---|---|
+### 🔹 Multi-touch Input Handling
+- Tracks any number of simultaneous touch points  
+- Normalized event handling for consistent behavior across devices  
+- Robust touch lifecycle management (press → move → release)  
+
+### 🔹 Random Selection Engine
+- Deterministic pseudo-random generator for unbiased results  
+- Stable mapping between finger IDs and bubble styles  
+- Instant visual + haptic feedback  
+
+### 🔹 Flexible Customization
+- Bubble styles: **colors**, **numbers**, **shapes**, **names**  
+- Custom player name entry  
+- Background themes (**Sunset**, **Ocean**, **Aurora**, …)  
+- Modular UI allowing easy extension of styles and effects  
+
+### 🔹 UX Feedback Layer
+- **expo-haptics** for tactile feedback  
+- Confetti animation using **react-native-reanimated**  
+- Smooth transitions & state-driven rendering  
+
+---
+
+## 📱 Screenshots
+
+| Main Screen | Bubble Style | Players | Background Picker |
+|------------|--------------|---------|--------------------|
 | ![](./assets/screenshots/main-screen.png) | ![](./assets/screenshots/bubbles-style.png) | ![](./assets/screenshots/add-players.png) | ![](./assets/screenshots/background-picker.png) |
 
 ---
 
-## 🖐️ Comment ça marche ?
+## ⚙️ Technical Overview
 
-1. Les joueurs posent leur **doigt** sur l’écran
-2. L’application détecte **chaque contact**
-3. 1 doigt est choisi **au hasard**
-4. 🎉 **Confettis + vibration** indiquent le gagnant
+### **Architecture**
+- Component-driven UI  
+- Centralized state with React Hooks  
+- Low input latency + predictable touch handling  
+- Minimal dependencies for reliability  
+- Clean folder structure for maintainability  
 
-Simple • Rapide • Fun
+### **Key Libraries**
+| Library | Purpose |
+|--------|---------|
+| **Expo** | Build system, device APIs |
+| **react-native-reanimated** | GPU-accelerated animations |
+| **expo-haptics** | Haptic feedback |
+| **expo-linear-gradient** | Background styling |
+| **EAS Build** | Generate APK & AAB |
 
----
-
-## 🎨 Personnalisation intégrée
-
-- Choix du **style des bulles** : couleurs / chiffres / formes / prénoms
-- Ajout de **noms personnalisés**
-- Sélection de thèmes d’arrière-plan **(Sunset, Ocean, Aurora, etc.)**
-- Interface claire et épurée
-
----
-
-## ✨ Fonctionnalités
-
-| Fonction | Description |
-|---|---|
-| Multi-touch | Détection de plusieurs doigts en simultané |
-| Random Fair Pick | Sélection équitable |
-| Feedback haptique | Vibrations au moment du résultat |
-| Confettis | Animation de célébration 🎉 |
-| Personnalisation | Thèmes + noms + styles de bulles |
+### **Performance Considerations**
+- Debounced touch updates to avoid render floods  
+- GPU-accelerated animations via Reanimated  
+- Memoized components to reduce re-renders  
+- Optimized static assets (PNG compression + caching)  
 
 ---
 
-## 🧱 Stack Technique
+## 🚀 Build & Installation
 
-- **React Native** + **Expo**
-- **react-native-reanimated** (animations fluides)
-- **expo-haptics**
-- **EAS Build** pour `APK` et `AAB`
-
-> ⚠️ **Le code source complet est privé**, mais peut être partagé en entretien sur demande.
-
----
-
-## 🧠 Objectif du projet
-
-Créer une expérience simple mais aboutie :
-- UX **instantanée** (aucune friction)
-- Multitouch réel
-- Feedbacks visuels + tactiles
-- Déploiement mobile **propre**
-
----
-
-## 👨‍💻 Auteur
-
-**Hafid Idrissi**  
-DevOps & Full-Stack Engineer  
-GitHub : https://github.com/HafidIdrissi  
-LinkedIn : https://www.linkedin.com/in/hafid-idrissi
-
----
+### 📥 Download (Android APK)
+Available via Expo EAS:  
+https://expo.dev/accounts/hafez_id/projects/finger-chooser/builds/68b5f23e-f773-4e88-9c2a-beef882d4417
